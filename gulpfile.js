@@ -31,7 +31,7 @@ var browserSyncTestServe = require('browser-sync').create();
 gulp.task('jshint', function() {
   return gulp.src(['js/*.js', 'spec/*.js', '*.js'])
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('concatInterface', function() {
