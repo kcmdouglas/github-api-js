@@ -14,7 +14,7 @@ $(document).ready(function(){
          var following = responseFromGit.following;
          var followers = responseFromGit.followers;
          var concatFollow = concatFollowInfo(following, followers);
-         $("div#user-info").append(concatFollow);
+         $("div#user-info").text(concatFollow);
 
 
 
