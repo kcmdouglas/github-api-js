@@ -1,1 +1,12 @@
+$subheaderGray = #d3d3d3;
 
+.jumbotron {
+  background-color: pink;
+  h2 {
+    text-decoration-color: $subheaderGray;
+  }
+}
+
+.hidden {
+  display: none;
+}
