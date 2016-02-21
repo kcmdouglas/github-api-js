@@ -6,37 +6,40 @@
     <title>GitHub Code Review</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <h1>Github Info Machine</h1>
-      <br>
-      <h2>Get the lowdown on a github user's repositories</h2>
-    </div>
     <div class="container">
-      <form class="form-inline">
-        <div class="form-group">
-          <label for="username">Github Username</label>
-          <input type="text" class="form-control" id="username" placeholder="Jane Doe">
-        </div>
-        <button type="submit" class="btn btn-primary">Get Info!</button>
-      </form>
+      <div class="jumbotron">
+        <h1>Github Info Machine</h1>
+        <br>
+        <h2>Get the lowdown on a github user's repositories</h2>
+      </div>
       <div class="row">
-        <div class="hidden">
-          <span class="hidden" id="failMessage"></span>
-          <div class="col-md-3" id="user-picture">
-
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="username">Github Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Jane Doe">
           </div>
-          <div class="col-md-9" id="user-info">
+          <button type="submit" class="btn btn-primary">Get Info!</button>
+        </form>
+      </div>
+      <div class="row" id="user">
+        <span id="failMessage"></span>
+        <div class="col-md-3" id="user-picture">
 
-          </div>
+        </div>
+        <div class="col-md-9" id="user-info">
+          <h1>Show is working for user info!</h1>
+          <span id="found-username"></span><br>
+          <span id="follow"></span>
+          <span></span>
         </div>
       </div>
       <div class="row">
-        <div class="hidden" id="repo-info">
-
+        <div id="repo-info">
+          <h1>Show is working for Repo info!</h1>
+          <span id="repos"></span>
         </div>
       </div>
     </div>
-  </div>
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
   </body>
