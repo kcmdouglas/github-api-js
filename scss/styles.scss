@@ -1,8 +1,27 @@
-$subheaderGray : #d3d3d3;
+$subheaderGray : #9A9898;
+$accentPink : #FFE1E6;
+$almostBlack : #505050;
 
 .jumbotron {
-  background-color: pink;
-  h2 {
-    text-decoration-color: $subheaderGray;
+  background-color: $accentPink;
+  h1 {
+    color: $almostBlack;
   }
+  h2 {
+    text-indent: 50px;
+    color: $subheaderGray;
+  }
+}
+
+div#indented-info {
+  margin-left: 50px;
+}
+
+div#user-info {
+  margin: 0 auto;
+  display: none;
+}
+
+#repo-info {
+  display: none;
 }

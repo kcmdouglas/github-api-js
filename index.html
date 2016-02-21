@@ -16,26 +16,26 @@
         <form class="form-inline">
           <div class="form-group">
             <label for="username">Github Username</label>
-            <input type="text" class="form-control" id="username" placeholder="Jane Doe">
+            <input type="text" class="form-control" id="username" placeholder="octocat">
           </div>
           <button type="submit" class="btn btn-primary">Get Info!</button>
         </form>
       </div>
       <div class="row" id="user">
-        <span id="failMessage"></span>
         <div class="col-md-3" id="user-picture">
-
         </div>
         <div class="col-md-9" id="user-info">
-          <h1>Show is working for user info!</h1>
           <span id="found-username"></span><br>
-          <span id="follow"></span>
-          <span></span>
+          <div id="indented-info">
+            <span id="public-repo-info"></span><br>
+            <span id="follow"></span>
+          </div>
+          <hr>
         </div>
       </div>
       <div class="row">
         <div id="repo-info">
-          <h1>Show is working for Repo info!</h1>
+          <h2>Here's all their public repos:</h2>
           <span id="repos"></span>
         </div>
       </div>
